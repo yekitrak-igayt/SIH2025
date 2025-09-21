@@ -185,31 +185,26 @@ const leaderboardData = [
   {
     name: "Rishank Semalti",
     points: 2450,
-    school: "Delhi Public School",
     badge: "🌟 Eco Champion",
   },
   {
     name: "Priya Patel",
     points: 2380,
-    school: "Kendriya Vidyalaya",
     badge: "🌱 Green Guardian",
   },
   {
     name: "Rahul Kumar",
     points: 2290,
-    school: "St. Xavier's School",
     badge: "🌿 Nature Protector",
   },
   {
     name: "Sneha Singh",
     points: 2150,
-    school: "DAV Public School",
     badge: "♻️ Recycling Hero",
   },
   {
     name: "Vikram Reddy",
     points: 2080,
-    school: "Narayana School",
     badge: "🌍 Planet Saver",
   },
 ];
@@ -494,7 +489,7 @@ export default function HomePage() {
                 action: handleLeaderboardClick,
               },
               {
-                name: "Games",
+                name: "Game",
                 icon: Gamepad2,
                 action: () =>
                   document
@@ -891,9 +886,6 @@ export default function HomePage() {
                   <Trophy className="h-6 w-6" />
                   Eco Champions Leaderboard
                 </CardTitle>
-                <CardDescription>
-                  Top environmental champions across all schools
-                </CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
@@ -948,9 +940,6 @@ export default function HomePage() {
                         </div>
                         <div>
                           <h4 className="font-semibold">You</h4>
-                          <p className="text-sm text-muted-foreground">
-                            Your School
-                          </p>
                         </div>
                       </div>
                       <div className="text-right">
@@ -1023,61 +1012,18 @@ export default function HomePage() {
               Main Attraction
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-green-800">
-              Interactive Eco Games
+              Interactive Eco Game
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Learn environmental concepts through engaging games that make
-              sustainability fun and memorable. Three exciting games coming soon
-              to transform how you learn about our planet!
+              Learn environmental concepts through engaging game that make
+              sustainability fun and memorable.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="border-green-200 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center pb-4">
-                <div className="bg-green-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                  <Recycle className="h-10 w-10 text-green-600" />
-                </div>
-                <CardTitle className="text-xl text-green-800">
-                  Eco Recycler
-                </CardTitle>
-                <Badge
-                  variant="secondary"
-                  className="bg-green-100 text-green-700"
-                >
-                  Coming Soon
-                </Badge>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center">
-                  Sort waste correctly, learn recycling processes, and build
-                  sustainable cities in this engaging simulation game.
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="border-green-200 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center pb-4">
-                <div className="bg-emerald-100 p-4 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                  <Leaf className="h-10 w-10 text-emerald-600" />
-                </div>
-                <CardTitle className="text-xl text-green-800">
-                  Forest Guardian
-                </CardTitle>
-                <Badge
-                  variant="secondary"
-                  className="bg-green-100 text-green-700"
-                >
-                  Coming Soon
-                </Badge>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-center">
-                  Protect ecosystems, plant trees, and manage wildlife habitats
-                  while learning about biodiversity.
-                </p>
-              </CardContent>
-            </Card>
+
+            <Card className="border-green-200 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105"></Card>
 
             <Card className="border-green-200 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center pb-4">
@@ -1091,7 +1037,7 @@ export default function HomePage() {
                   variant="secondary"
                   className="bg-green-100 text-green-700"
                 >
-                  Coming Soon
+                  
                 </Badge>
               </CardHeader>
               <CardContent>
@@ -1101,16 +1047,6 @@ export default function HomePage() {
                 </p>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="text-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-green-600 to-emerald-600 text-white hover:from-green-700 hover:to-emerald-700"
-            >
-              <Play className="mr-2 h-5 w-5" />
-              Get Notified When Games Launch
-            </Button>
           </div>
         </div>
       </section>
@@ -1178,7 +1114,7 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our Solution: EcoLearn Platform
+              Our Solution: TerraLearn Platform
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
               A comprehensive gamified platform that transforms environmental
@@ -1234,7 +1170,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground text-center">
-                  Digital certificates, badges, and rewards for sustainable
+                  Digital certificates, eco-points, and rewards for sustainable
                   practices
                 </p>
               </CardContent>
@@ -1382,7 +1318,7 @@ export default function HomePage() {
           </h2>
           <p className="text-lg mb-8 opacity-90 text-pretty">
             Be part of the future of environmental education. Together, we can
-            create a generation of eco-conscious leaders through engaging games
+            create a generation of eco-conscious leaders through engaging game
             and interactive learning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -1447,7 +1383,7 @@ export default function HomePage() {
               },
             },
             {
-              name: "Games",
+              name: "Game",
               icon: Gamepad2,
               action: () =>
                 document

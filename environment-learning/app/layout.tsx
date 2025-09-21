@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "EcoLearn - Smart India Hackathon 2024",
+  title: "TerraLearn - Smart India Hackathon 2024",
   description:
     "Gamified Environmental Education Platform - Empowering students to learn sustainability through interactive challenges and real-world actions",
   generator: "v0.app",
